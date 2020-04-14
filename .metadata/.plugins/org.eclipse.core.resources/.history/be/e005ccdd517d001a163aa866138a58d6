@@ -1,0 +1,12 @@
+package com.chap02;
+
+public class Array03 {
+	
+	public static void main(String[] args) {
+		int counter = 0;
+		int primeCount = 0;
+		int[] prime = new int[500];		//소수를 저장하는 배열
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.chap02;
+
+import java.util.Random;
+import java.util.Scanner;
+
+//난수 사용해 배열의 요솟값 설정하기
+public class Array02 {
+	
+	public static int MaxArray(int[] a) {
+		int max = a[0];
+		for (int i = 1; i < a.length ; i++) {
+			if (a[i] > max) {
+				max = a[i];
+			}
+		}
+		return max;
+	}
+	
+	public static void main(String[] args) {
+		Random rand = new Random();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("키의 최댓값을 구합니다.");
+		System.out.println("사람 수 : ");
+		int num = sc.nextInt();
+		
+		int[] height = new int[num];
+		
+		System.out.println("키 값은 아래와 같습니다.");
+		for (int i = 0; i < num ; i++) {
+			height[i] = 100 + rand.nextInt(90);
+			System.out.println("height[" + i + "] : " + height[i]);
+			
+		}
+		
+		System.out.println("최댓값은 " + MaxArray(height) + "입니다.");
+		
+	}
+	
+
+}

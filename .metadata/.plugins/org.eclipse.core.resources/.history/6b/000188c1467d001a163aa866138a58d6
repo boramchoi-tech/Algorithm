@@ -1,0 +1,11 @@
+package com.chap02;
+
+//난수 사용해 배열의 요솟값 설정하기
+public class Array02 {
+	
+	public int RandomArray(int[] a) {
+		return null;
+	}
+	
+
+}
